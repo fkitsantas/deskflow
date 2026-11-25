@@ -571,7 +571,7 @@ void Config::readSectionOptions(ConfigReadContext &s)
     if (line == "end") {
       return;
     } else if (const auto l = QString::fromStdString(line).simplified();
-               !l.startsWith(QStringLiteral("keystroke")) && !l.startsWith(QStringLiteral("mousepress"))) {
+               !l.startsWith(QStringLiteral("keystroke")) && !l.startsWith(QStringLiteral("mousebutton"))) {
       continue;
     }
 
